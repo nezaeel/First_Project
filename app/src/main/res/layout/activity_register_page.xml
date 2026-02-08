@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Page"
+    android:background="#DEDED1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/Rimg_1"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btn_back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Onbard!"
+        android:layout_below="@id/Rimg_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:id="@+id/txt_R_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let’s help you meet up your tasks."
+        android:layout_below="@id/txt_R_1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#435663"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txt_R_2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt_R_2"
+        android:padding="30dp"
+        android:id="@+id/LL_R">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="25dp"
+            android:hint="Username"
+            android:background="@drawable/radius_shape"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="22dp"
+            android:textSize="20sp"
+            android:id="@+id/et_R_1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="17dp"
+            android:hint="Enter you email"
+            android:background="@drawable/radius_shape"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="22dp"
+            android:textSize="20sp"
+            android:id="@+id/et_R_2"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="17dp"
+            android:hint="Create password"
+            android:background="@drawable/radius_shape"
+            android:backgroundTint="#FFFFFF"
+            android:inputType="textPassword"
+            android:paddingLeft="22dp"
+            android:textSize="20sp"
+            android:id="@+id/et_R_3"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="17dp"
+            android:hint="Confirm password"
+            android:background="@drawable/radius_shape"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="22dp"
+            android:textSize="20sp"
+            android:id="@+id/et_R_4"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL_R"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#73C8D2"
+        android:height="65dp"
+        android:width="300dp"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="25sp"
+        android:id="@+id/btn_R_1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_R_1"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? "
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+        <TextView
+            android:id="@+id/txt_From_Register_To_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Login"
+            android:textColor="#55BBAF"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
